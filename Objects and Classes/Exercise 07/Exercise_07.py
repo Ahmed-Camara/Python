@@ -16,8 +16,10 @@ f = int(input('Enter value of f : '))
 
 linearE = LinearEquation(a,b,c,d,e,f)
 
-print(linearE.getY())
+x = linearE.getX()
+y = linearE.getY()
 if linearE.isSolvable():
-    print('X is {}\nand Y is {}: '.format(linearE.getX(),linearE.getY()))
+    if x != 0:
+        print('X is {}\nand Y is {}: '.format(x,y))
 else:
     print('The equation has no solution')

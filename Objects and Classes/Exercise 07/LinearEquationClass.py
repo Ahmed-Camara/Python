@@ -41,11 +41,14 @@ class LinearEquation:
         num = ((self.__e * self.__d) - (self.__b * self.__f))
         den = ((self.__a * self.__d) - (self.__b * self.__c))
         
-    
+        if den == 0:
+            return 0
         return num / den
     
     def getY(self):
         num = ((self.__a * self.__f) - (self.__e * self.__c))
         den = ((self.__a * self.__d) - (self.__b * self.__c))
+        if den == 0:
+            return 0
         return num / den
     

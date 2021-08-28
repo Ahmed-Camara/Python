@@ -11,6 +11,7 @@ number of occurrences of the second string in the first string.
 def count(s1, s2):
 
     s1_split = s1.split(",") if "," in s1 else s1.split(" ")
+
     count = 0
     for s in s1_split:
 

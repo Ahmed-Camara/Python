@@ -14,8 +14,6 @@ def validate_SSN(ssn):
         ssn_split = ssn.split("-")
         if (len(ssn_split[0]) == 3 and ssn_split[0].isdigit()) and (len(ssn_split[1]) == 2 and ssn_split[1].isdigit()) and (len(ssn_split[2]) == 4 and ssn_split[2].isdigit()):
             validator = True
-    else:
-        validator = False
 
     return validator
 
